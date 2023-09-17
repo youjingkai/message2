@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- saved from url=(0236)https://zlaq.mohurd.gov.cn/fwmh/middlepage.html?ID=C1084FFE478CDDABA6D468E486F51BBF2975F8AD5DD3ADDB&k=YWQd7ZRV+xDr8o6LbemAy2xc+MxeW/5LzgmRyOPtoatfjL+dx5VoBV572JZSaiGM7jVVhx10pRadkmGmLeN+lQ==&certype=11100000000013338W032&province=330000 -->
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>扫码查询</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        #inputbox {
+            height: min-content;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+
+        }
+
+        #input {
+            height: 30px;
+            width: 88%;
+            border: 0.8px solid rgba(0, 0, 0, 0.08);
+            border-radius: 5px;
+            padding: 5px;
+            outline: none;
+            background: rgb(221, 230, 243);
+            color: rgb(142, 152, 174);
+            ;
+            padding: 5px;
+            font-size: 15px;
+
+        }
+
+        #input2 {
+            height: 30px;
+            width: 88%;
+            border: 0.8px solid rgba(0, 0, 0, 0.08);
+            border-radius: 5px;
+            padding: 5px;
+            outline: none;
+            background: rgb(221, 230, 243);
+            color: rgb(142, 152, 174);
+            ;
+            padding: 5px;
+            font-size: 15px;
+
+        }
+
+        .text {
+            font-size: 14px;
+            color: rgb(142, 152, 174);
+            margin: 20px 0 10px calc(6% - 5px);
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            height: 70px;
+        }
+    </style>
+    <script>
+        function redirectToPage() {
+            // 获取姓名输入框的值
+            var nameInput = document.getElementById('input');
+            var name = nameInput.value;
+
+            // 获取身份证号输入框的值
+            var idInput = document.getElementById('input2');
+            var idNumber = idInput.value;
+            if (name == '刘启洪' && idNumber == "530622200101131319") {
+                window.location.href = '05.html';
+
+            } else {
+                window.location.href = '03.html';
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="text">姓名</div>
+    <div id="inputbox"><input type="text" id="input" placeholder="请输入完整姓名" style=""></div>
+
+    <div class="text">身份证号</div>
+    <div id="inputbox"><input type="text" id="input2" placeholder="请输入完整身份证号" style=""></div>
+
+    <div class="text">建筑施工特种作业操作资格证书号</div>
+    <div id="inputbox"><input type="text" id="input" placeholder="请输入完整建筑施工特种作业操作资格证书号" style=""></div>
+
+
+    <img onclick="redirectToPage()" src="2.png" class="footer">
+
+
+
+
+</body>
+
+</html>
